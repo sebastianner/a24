@@ -1,0 +1,40 @@
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+    transition: .2s;
+}
+
+.sticky-nav{
+    position: fixed;
+    background-color: rgb(39, 39, 39);
+    box-shadow: 1px 5px 10px #07010199;
+    transition: .2s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    height: fit-content;
+}
+
+li{
+    margin: 0 30px;
+}
+
+li a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Mulish';
+}
+
+@import "components/scroll-bar";
+@import "components/header";
+@import "components/hero";
+@import "components/descrip";
+@import "components/highlight";
