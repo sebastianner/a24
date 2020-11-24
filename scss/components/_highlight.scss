@@ -1,22 +1,26 @@
 .red-container{
     height: 2000px;
-    background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box
+    background: $red-container
 }
 
-.features{
-    color: white;
-    text-align: center;
-}
+.highlight{
+    justify-content: center;
+    align-items: center;
+    .features{
+        color: white;
+        text-align: center;
 
-.feature-container{
-    display: flex;
-}
+        .feature-container{
+            display: flex;
+        }
+    }
 
-.upcoming{
-    color: white;
-    text-align: center;
-}
-
-.upcoming-container{
-    display: flex;
+    .upcoming{
+        color: white;
+        text-align: center;
+    
+        .upcoming-container{
+            display: flex;
+        }
+    }
 }
