@@ -7,9 +7,9 @@ body{
     font-family: 'Mulish';
 }
 
-@import "lib/variables";
+@import "lib/variables","lib/minix","lib/functions";
 @import "components/scroll-bar";
 @import "components/header";
 @import "components/hero";
 @import "components/descrip";
-@import "components/highlight";
+@import "components/red-container","components/blue-container","components/yellow-container";

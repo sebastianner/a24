@@ -38,6 +38,7 @@ header {
           text-decoration: none; }
 
 .sticky-nav {
+  z-index: 2;
   position: fixed;
   background-color: #272727;
   box-shadow: 1px 5px 10px #07010199;
@@ -97,17 +98,58 @@ main .description {
     min-width: 300px; }
 
 .red-container {
-  height: 2000px;
-  background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box; }
+  height: 1600px;
+  background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
-.highlight .features {
-  color: white;
-  text-align: center; }
-  .highlight .features .feature-container {
-    display: flex; }
+.highlight {
+  overflow: hidden;
+  width: 100%; }
+  .highlight .features, .highlight .upcoming {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center; }
+    .highlight .features h1, .highlight .upcoming h1 {
+      padding: 50px; }
+    .highlight .features .slide, .highlight .upcoming .slide {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      font-size: 60px;
+      font-weight: bold;
+      z-index: 1;
+      left: .5%; }
+      .highlight .features .slide:nth-of-type(2), .highlight .upcoming .slide:nth-of-type(2) {
+        left: 98%;
+        text-align: right; }
+    .highlight .features .feature-container, .highlight .upcoming .feature-container, .highlight .upcoming .upcoming-container {
+      overflow-y: hidden;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      position: relative;
+      display: flex;
+      left: 0;
+      transition: .5s; }
+      .highlight .features .feature-container div, .highlight .upcoming .feature-container div, .highlight .upcoming .upcoming-container div {
+        padding: 10px; }
+        .highlight .features .feature-container div:nth-of-type(1), .highlight .upcoming .feature-container div:nth-of-type(1), .highlight .upcoming .upcoming-container div:nth-of-type(1) {
+          padding: 0 0 0 50px; }
+        .highlight .features .feature-container div:nth-last-of-type(1), .highlight .upcoming .feature-container div:nth-last-of-type(1), .highlight .upcoming .upcoming-container div:nth-last-of-type(1) {
+          padding: 0 50px 0 10px; }
 
-.highlight .upcoming {
-  color: white;
-  text-align: center; }
-  .highlight .upcoming .upcoming-container {
-    display: flex; }
+.blue-container {
+  height: 1600px;
+  background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.yellow-container {
+  height: 1600px;
+  background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }

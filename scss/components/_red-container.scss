@@ -1,0 +1,65 @@
+.red-container{
+    @include color-bg($red-container)
+}
+
+.highlight{
+    overflow: hidden;
+    width: 100%;
+    .features{
+        position: relative;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+
+        h1{
+            padding: 50px;
+        }
+
+        .slide{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            font-size: 60px;
+            font-weight: bold;
+            z-index: 1;
+            left: .5%;
+
+            &:nth-of-type(2){
+                left: 98%;
+                text-align: right;
+            }
+        }
+
+        .feature-container{
+            overflow-y: hidden;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+            position: relative;
+            display: flex;
+            left: 0;
+            transition: .5s;
+
+            div{
+                padding: 10px;
+                
+                &:nth-of-type(1){
+                    padding: 0 0 0 50px;
+                }
+
+                &:nth-last-of-type(1){
+                    padding: 0 50px 0 10px;
+                }
+            }
+        }
+    }
+
+    .upcoming{
+       @extend .features
+    }
+
+    .upcoming{
+        .upcoming-container{
+            @extend .feature-container
+        }
+    }
+}

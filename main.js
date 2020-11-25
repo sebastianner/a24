@@ -1,27 +1,47 @@
 let baseUrl = 'https://api.themoviedb.org/3/';
-let apiUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=9660be5ceab38276fc0d0c4771d5c6be&language=en-US&include_adult=yes&include_video=yes&with_companies=41077'
-var counter = 0
 
 
-let getConfig = function () {
-    fetch(apiUrl)
+let getFeatures = function () {
+    let getFeaturesUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=9660be5ceab38276fc0d0c4771d5c6be&language=en-US&include_adult=yes&include_video=yes&with_companies=41077'
+    let counter = 0
+    fetch(getFeaturesUrl)
     .then(data=>data.json())
     .then(data=>{
-        console.log(data)
         data.results.forEach(e => {
-            var movie = document.createElement('div')
+            let movie = document.createElement('div')
             movie.setAttribute('id','movie'+counter)
             document.getElementById('feature-container').appendChild(movie)
-            var poster = document.createElement('img')
+            let poster = document.createElement('img')
             poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
             document.getElementById('movie'+counter).appendChild(poster)
-            var title = document.createElement('p')
-            title.innerHTML = e.title
-            document.getElementById('movie'+counter).appendChild(title)
             counter++
         })
     })
     .catch(err=>alert(err))
 }
 
-document.addEventListener('DOMContentLoaded',getConfig)
+
+let getUpcoming = ()=>{
+    let getUpcomingUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=9660be5ceab38276fc0d0c4771d5c6be&language=en-US&sort_by=popularity.asc&include_adult=true&include_video=true&primary_release_year=2020&year=2020&with_companies=41077'
+    let counter = 0
+    fetch(getUpcomingUrl)
+    .then(data=>data.json())
+    .then(data=>{
+        data.results.forEach(e => {
+            let movie = document.createElement('div')
+            movie.setAttribute('id','upcoming'+counter)
+            document.getElementById('upcoming-container').appendChild(movie)
+            let poster = document.createElement('img')
+            poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
+            document.getElementById('upcoming'+counter).appendChild(poster)
+            poster.onerror=function() {
+                movie.remove()
+            }
+            counter++
+        });
+    })
+    .catch(err=>alert(err))
+}
+
+document.addEventListener('DOMContentLoaded',getUpcoming)
+document.addEventListener('DOMContentLoaded',getFeatures)

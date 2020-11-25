@@ -34,6 +34,7 @@ header{
 }
 
 .sticky-nav{
+    z-index: 2;
     position: fixed;
     background-color: rgb(39, 39, 39);
     box-shadow: 1px 5px 10px #07010199;
