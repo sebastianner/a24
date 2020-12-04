@@ -132,9 +132,10 @@ main .description {
       position: relative;
       display: flex;
       left: 0;
-      transition: .5s; }
+      transition: .5s;
+      }
       .highlight .features .feature-container div, .highlight .upcoming .feature-container div, .highlight .upcoming .upcoming-container div {
-        padding: 10px; }
+        padding-left: 10px; }
         .highlight .features .feature-container div:nth-of-type(1), .highlight .upcoming .feature-container div:nth-of-type(1), .highlight .upcoming .upcoming-container div:nth-of-type(1) {
           padding: 0 0 0 50px; }
         .highlight .features .feature-container div:nth-last-of-type(1), .highlight .upcoming .feature-container div:nth-last-of-type(1), .highlight .upcoming .upcoming-container div:nth-last-of-type(1) {

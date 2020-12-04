@@ -1,10 +1,10 @@
 var icon = document.getElementsByClassName('slide')
-var movies = document.getElementById('feature-container')
-var test = 740
-console.log(test)
+console.log(icon)
+var featured = document.getElementById('feature-container')
+var upcoming = document.getElementById('upcoming-container')
 
-icon[1].addEventListener('click',()=>movies.scrollLeft+=735)
+icon[1].addEventListener('click',()=>featured.scrollLeft+=735)
+icon[0].addEventListener('click',()=>featured.scrollLeft+=-735)
 
-icon[0].addEventListener('click',()=>movies.scrollLeft+=-735)
-
-
+icon[2].addEventListener('click',()=>upcoming.scrollLeft+=-735)
+icon[3].addEventListener('click',()=>upcoming.scrollLeft+=735)

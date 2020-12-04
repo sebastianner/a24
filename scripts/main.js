@@ -13,7 +13,14 @@ let getFeatures = function () {
             document.getElementById('feature-container').appendChild(movie)
             let poster = document.createElement('img')
             poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
+            poster.setAttribute('alt',e.title)
             document.getElementById('movie'+counter).appendChild(poster)
+            poster.onerror=function() {
+                movie.remove()
+            }
+            if (poster.height<513) {
+                movie.remove()
+            }
             counter++
         })
     })
@@ -33,8 +40,12 @@ let getUpcoming = ()=>{
             document.getElementById('upcoming-container').appendChild(movie)
             let poster = document.createElement('img')
             poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
+            poster.setAttribute('alt',e.title)
             document.getElementById('upcoming'+counter).appendChild(poster)
             poster.onerror=function() {
+                movie.remove()
+            }
+            if (poster.height<513) {
                 movie.remove()
             }
             counter++
