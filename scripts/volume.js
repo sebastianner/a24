@@ -5,10 +5,12 @@
     function mute(){
         if(video.muted === true){
             video.muted = false
-            btn.style.backgroundImage = "url(/static/mute.png)"
+            btn.removeAttribute('class')
+            btn.setAttribute('class','icon-volume-on')
         }
         else{
             video.muted = true
-            btn.style.backgroundImage = "url(/static/volume.png)"
+            btn.removeAttribute('class')
+            btn.setAttribute('class','icon-volume-mute')
         }
     }
