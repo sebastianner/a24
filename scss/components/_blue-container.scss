@@ -9,7 +9,9 @@
         h1{
             color: white;
             position: absolute;
-            left: 100px;
+            left: 642px;
+            top: 90px;
+            font-weight: 400;
         }
 
         .shop-item{
@@ -24,6 +26,14 @@
 
                 p{
                     width: 100%;
+                }
+                .text-icons-container{
+                    position: relative;
+                    top: 10px;
+                    span{
+                        font-size: 22px;
+                        font-weight: 400;
+                    }
                 }
             }
         }
