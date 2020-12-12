@@ -1,7 +1,5 @@
 @mixin color-bg($color) {
         height: 1600px;
         background: $color;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @content
 }

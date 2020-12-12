@@ -3,7 +3,7 @@
   padding: 0; }
 
 body {
-  font-family: 'Mulish'; }
+  font-family: 'Mulish', sans-serif; }
 
 ::-webkit-scrollbar {
   background-color: gray;
@@ -139,13 +139,24 @@ main .description {
 .blue-container {
   height: 1600px;
   background: transparent linear-gradient(181deg, #000000 10%, #1C2AA5 50%, #000000 100%) 0% 0% no-repeat padding-box;
+  position: relative; }
+
+.blue-container .shop-container h1 {
+  color: white;
+  position: absolute;
+  left: 100px; }
+
+.blue-container .shop-container .shop-item {
+  font-family: 'Mulish';
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
+  .blue-container .shop-container .shop-item .item-text-container {
+    width: 30%; }
+    .blue-container .shop-container .shop-item .item-text-container p {
+      width: 100%; }
 
 .yellow-container {
   height: 1600px;
-  background: transparent linear-gradient(181deg, #000000 10%, #D9CC2D 50%, #000000 100%) 0% 0% no-repeat padding-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  background: transparent linear-gradient(181deg, #000000 10%, #D9CC2D 50%, #000000 100%) 0% 0% no-repeat padding-box; }

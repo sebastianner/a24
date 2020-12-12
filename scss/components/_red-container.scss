@@ -1,5 +1,9 @@
 .red-container{
-    @include color-bg($red-container)
+    @include color-bg($red-container){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 }
 
 .highlight{

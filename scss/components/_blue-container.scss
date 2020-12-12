@@ -1,3 +1,31 @@
 .blue-container{
-    @include color-bg($blue-container)
+    @include color-bg($blue-container){
+        position: relative;
+    }
+}
+
+.blue-container{
+    .shop-container{
+        h1{
+            color: white;
+            position: absolute;
+            left: 100px;
+        }
+
+        .shop-item{
+            font-family: 'Mulish';
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item-text-container{
+                width: 30%;
+
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
