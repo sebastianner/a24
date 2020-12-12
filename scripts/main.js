@@ -16,9 +16,8 @@ let getFeatures = function () {
             poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
             poster.setAttribute('alt',e.title)
             document.getElementById('movie'+counter).appendChild(poster)
-
-            if (poster.height<513) {
-                console.log(movie)
+            if (poster.height<513){
+                movie.remove()
             }
             poster.onerror=function() {movie.style.display = 'none'}
             counter++

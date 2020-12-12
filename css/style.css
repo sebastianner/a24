@@ -138,14 +138,14 @@ main .description {
 
 .blue-container {
   height: 1600px;
-  background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(181deg, #000000 10%, #1C2AA5 50%, #000000 100%) 0% 0% no-repeat padding-box;
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
 .yellow-container {
   height: 1600px;
-  background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(181deg, #000000 10%, #D9CC2D 50%, #000000 100%) 0% 0% no-repeat padding-box;
   display: flex;
   flex-direction: column;
   justify-content: center; }
