@@ -6,14 +6,6 @@
 
 .blue-container{
     .shop-container{
-        h1{
-            color: white;
-            position: absolute;
-            left: 642px;
-            top: 90px;
-            font-weight: 400;
-        }
-
         .shop-item{
             font-family: 'Mulish';
             color: white;
@@ -23,6 +15,14 @@
 
             .item-text-container{
                 width: 30%;
+                max-width: 500px;
+
+                h1{
+                    color: white;
+                    position: relative;
+                    bottom:30px;
+                    font-weight: 400;
+                }
 
                 p{
                     width: 100%;
@@ -30,12 +30,25 @@
                 .text-icons-container{
                     position: relative;
                     top: 10px;
+                    i{
+                        cursor: pointer;
+                    }
                     span{
                         font-size: 22px;
                         font-weight: 400;
+                        cursor: pointer;
                     }
                 }
             }
+            figure{
+                margin: 50px;
+                cursor: pointer;
+            }
+            // &:nth-of-type(1){
+            //     figure{
+            //         margin-left: 50px;
+            //     }
+            // }
         }
     }
 }

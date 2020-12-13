@@ -46,9 +46,9 @@ let getUpcoming = ()=>{
 }
 
 function removeErrors() {
-    document.getElementById('movie1').style.display='none'
-    document.getElementById('movie8').style.display='none'
-    document.getElementById('movie12').style.display='none'
+    document.getElementById('movie2').style.display='none'
+    document.getElementById('movie13').style.display='none'
+    document.getElementById('movie16').style.display='none'
 }
 
 document.addEventListener('DOMContentLoaded',getFeatures)

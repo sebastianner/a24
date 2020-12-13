@@ -142,13 +142,6 @@ main .description {
   background: transparent linear-gradient(181deg, #000000 10%, #1C2AA5 50%, #000000 100%) 0% 0% no-repeat padding-box;
   position: relative; }
 
-.blue-container .shop-container h1 {
-  color: white;
-  position: absolute;
-  left: 642px;
-  top: 90px;
-  font-weight: 400; }
-
 .blue-container .shop-container .shop-item {
   font-family: 'Mulish';
   color: white;
@@ -156,15 +149,27 @@ main .description {
   justify-content: center;
   align-items: center; }
   .blue-container .shop-container .shop-item .item-text-container {
-    width: 30%; }
+    width: 30%;
+    max-width: 500px; }
+    .blue-container .shop-container .shop-item .item-text-container h1 {
+      color: white;
+      position: relative;
+      bottom: 30px;
+      font-weight: 400; }
     .blue-container .shop-container .shop-item .item-text-container p {
       width: 100%; }
     .blue-container .shop-container .shop-item .item-text-container .text-icons-container {
       position: relative;
       top: 10px; }
+      .blue-container .shop-container .shop-item .item-text-container .text-icons-container i {
+        cursor: pointer; }
       .blue-container .shop-container .shop-item .item-text-container .text-icons-container span {
         font-size: 22px;
-        font-weight: 400; }
+        font-weight: 400;
+        cursor: pointer; }
+  .blue-container .shop-container .shop-item figure {
+    margin: 50px;
+    cursor: pointer; }
 
 .yellow-container {
   height: 1600px;
