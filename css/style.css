@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap");
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -179,8 +180,7 @@ main .description {
   background: transparent linear-gradient(181deg, #000000 10%, #D9CC2D 50%, #000000 100%) 0% 0% no-repeat padding-box; }
 
 .yellow-container {
-  padding: 0  100px 100px;
-  box-sizing: border-box; }
+  padding: 0  100px 100px; }
   .yellow-container h1 {
     text-align: center;
     color: white;
