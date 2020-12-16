@@ -18,7 +18,6 @@ let getFeatures = function () {
             poster.onerror=function() {movie.style.display = 'none'}
             counter++
         })
-        removeErrors()
     })
     .catch(err=>console.log(err))
 }
@@ -43,12 +42,6 @@ let getUpcoming = ()=>{
         });
     })
     .catch(err=>console.log(err))
-}
-
-function removeErrors() {
-    document.getElementById('movie2').style.display='none'
-    document.getElementById('movie13').style.display='none'
-    document.getElementById('movie16').style.display='none'
 }
 
 document.addEventListener('DOMContentLoaded',getFeatures)

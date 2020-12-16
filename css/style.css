@@ -93,7 +93,7 @@ main .description {
     min-width: 300px; }
 
 .red-container {
-  height: 1600px;
+  height: fit-content;
   background: transparent linear-gradient(181deg, #000000 10%, #4e0404de 50%, #000000 100%) 0% 0% no-repeat padding-box;
   display: flex;
   flex-direction: column;
@@ -138,39 +138,83 @@ main .description {
           padding: 0 50px 0 10px; }
 
 .blue-container {
-  height: 1600px;
+  height: fit-content;
   background: transparent linear-gradient(181deg, #000000 10%, #1C2AA5 50%, #000000 100%) 0% 0% no-repeat padding-box;
   position: relative; }
 
-.blue-container .shop-container .shop-item {
-  font-family: 'Mulish';
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .blue-container .shop-container .shop-item .item-text-container {
-    width: 30%;
-    max-width: 500px; }
-    .blue-container .shop-container .shop-item .item-text-container h1 {
-      color: white;
-      position: relative;
-      bottom: 30px;
-      font-weight: 400; }
-    .blue-container .shop-container .shop-item .item-text-container p {
-      width: 100%; }
-    .blue-container .shop-container .shop-item .item-text-container .text-icons-container {
-      position: relative;
-      top: 10px; }
-      .blue-container .shop-container .shop-item .item-text-container .text-icons-container i {
-        cursor: pointer; }
-      .blue-container .shop-container .shop-item .item-text-container .text-icons-container span {
-        font-size: 22px;
-        font-weight: 400;
-        cursor: pointer; }
-  .blue-container .shop-container .shop-item figure {
-    margin: 50px;
-    cursor: pointer; }
+.blue-container {
+  padding: 100px;
+  box-sizing: border-box; }
+  .blue-container .shop-container .shop-item {
+    font-family: 'Mulish';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .blue-container .shop-container .shop-item .item-text-container {
+      width: 30%;
+      max-width: 500px; }
+      .blue-container .shop-container .shop-item .item-text-container h1 {
+        color: white;
+        position: relative;
+        bottom: 30px;
+        font-weight: 400; }
+      .blue-container .shop-container .shop-item .item-text-container p {
+        width: 100%; }
+      .blue-container .shop-container .shop-item .item-text-container .text-icons-container {
+        position: relative;
+        top: 10px; }
+        .blue-container .shop-container .shop-item .item-text-container .text-icons-container i {
+          cursor: pointer; }
+        .blue-container .shop-container .shop-item .item-text-container .text-icons-container span {
+          font-size: 22px;
+          font-weight: 400;
+          cursor: pointer; }
+    .blue-container .shop-container .shop-item figure {
+      margin: 50px;
+      cursor: pointer; }
 
 .yellow-container {
-  height: 1600px;
+  height: fit-content;
   background: transparent linear-gradient(181deg, #000000 10%, #D9CC2D 50%, #000000 100%) 0% 0% no-repeat padding-box; }
+
+.yellow-container {
+  padding: 0  100px 100px;
+  box-sizing: border-box; }
+  .yellow-container h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 400; }
+  .yellow-container .blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .yellow-container .blog-list .blog {
+      position: relative;
+      height: 450px;
+      width: 50%;
+      margin: 10px; }
+      .yellow-container .blog-list .blog .blog-post {
+        height: 100%;
+        width: 100%;
+        background-image: url("/static/euphoria.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute; }
+      .yellow-container .blog-list .blog .test {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.421); }
+      .yellow-container .blog-list .blog:hover .test {
+        display: flex; }
+      .yellow-container .blog-list .blog:nth-of-type(2) .blog-post {
+        background-image: url("/static/climax.jpg"); }
+      .yellow-container .blog-list .blog:nth-of-type(3) .blog-post {
+        background-image: url("/static/the-lighthouse.jpg"); }

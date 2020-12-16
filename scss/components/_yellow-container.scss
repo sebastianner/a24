@@ -1,3 +1,58 @@
 .yellow-container{
     @include color-bg($yellow-container)
 }
+
+.yellow-container{
+    padding: 0  100px 100px;
+    box-sizing: border-box;
+
+    h1{
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+
+    .blog-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .blog{
+            position: relative;
+            height: 450px;
+            width: 50%;
+            margin: 10px;
+            .blog-post{
+                height: 100%;
+                width: 100%;
+                background-image: url("/static/euphoria.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+            }
+
+            .test{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                display: none;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.421);
+            }
+
+            &:hover .test{
+                display: flex;
+            }
+            &:nth-of-type(2)  .blog-post{
+                background-image: url("/static/climax.jpg");
+            }
+            &:nth-of-type(3)  .blog-post{
+                background-image: url("/static/the-lighthouse.jpg");
+            }
+        }
+    }
+}
