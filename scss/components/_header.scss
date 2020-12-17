@@ -27,6 +27,24 @@ header{
                     font-weight: 500;
                     text-decoration: none;
                 }
+
+                div{
+                    input{
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid white;
+                        outline: none;
+                        color: white;
+                        width: 0;
+                        transition: .6s;
+                    }
+
+                    &:hover{
+                        input{
+                            width: 150px;
+                        }
+                    }
+                }
             }
             
         }

@@ -38,6 +38,16 @@ header {
           color: white;
           font-weight: 500;
           text-decoration: none; }
+        header nav ul li div input {
+          background-color: transparent;
+          border: none;
+          border-bottom: 1px solid white;
+          outline: none;
+          color: white;
+          width: 0;
+          transition: .6s; }
+        header nav ul li div:hover input {
+          width: 150px; }
 
 .sticky-nav {
   z-index: 2;
