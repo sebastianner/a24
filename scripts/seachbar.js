@@ -5,11 +5,14 @@ let test = document.getElementById('test')
 
 function showMovies(filtered,e) {
     if (e.key==='Backspace') {
-        if (searchBar.value.length===0) {
+        if (searchBar.value.length<1) {
            test.style.display='none' 
         }else{
             test.style.display='block' 
         }
+    }
+    if (searchBar.value.length>0) {
+        test.style.display='block' 
     }
         var html = filtered
         .map((e)=>{
