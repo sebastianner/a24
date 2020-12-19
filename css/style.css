@@ -48,6 +48,14 @@ header {
           transition: .6s; }
         header nav ul li div:hover input {
           width: 150px; }
+        header nav ul li:nth-last-of-type(4) {
+          position: relative; }
+      header nav ul .result-box {
+        color: red;
+        position: absolute;
+        top: 90px;
+        right: 20px;
+        text-align: right; }
 
 .sticky-nav {
   z-index: 2;

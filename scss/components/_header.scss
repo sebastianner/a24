@@ -45,6 +45,18 @@ header{
                         }
                     }
                 }
+
+                &:nth-last-of-type(4){
+                    position: relative;
+                }
+            }
+
+            .result-box{
+                color: red;
+                position: absolute;
+                top: 90px;
+                right: 20px;
+                text-align: right;
             }
             
         }

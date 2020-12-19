@@ -1,6 +1,27 @@
 let urlBase = 'https://api.themoviedb.org/3/'
 let apiKey = '9660be5ceab38276fc0d0c4771d5c6be'
 let searchBar = document.getElementById('search-bar')
+let test = document.getElementById('test')
+
+function showMovies(filtered,e) {
+    if (e.key==='Backspace') {
+        if (searchBar.value.length===0) {
+           test.style.display='none' 
+        }else{
+            test.style.display='block' 
+        }
+    }
+        var html = filtered
+        .map((e)=>{
+            return `
+            <span>
+                <h2>${e.title}</h2>
+            </span>
+        `
+        })
+        .join('')
+        test.innerHTML = html;
+}
 
 function toUpperCase(str) {
     var arr = []
@@ -17,23 +38,8 @@ function runsearch(movies) {
         let filteredMovies = movies.results.filter(m=>{
             return m.title.includes(toUpperCase(searchString))
         })
-        console.log(filteredMovies)
+        showMovies(filteredMovies,e)
     })
-}
-
-
-let getConfig = function () {
-    let url = ''.concat(urlBase,'configuration?api_key=',apiKey)
-    fetch(url)
-    .then(result=>{return result.json()})
-    .then((data)=>{
-        baseImageURL = data.images.secure_base_url;
-        configData = data.images;
-        console.log('config:', data);
-        console.log('config fetched');
-        getMovies()
-    })
-    .catch(err=>console.log(err))
 }
 
 let getMovies = function () {
@@ -43,6 +49,19 @@ let getMovies = function () {
     .then((data)=>{
         runsearch(data)
     })
+}
+
+let getConfig = function () {
+    let url = ''.concat(urlBase,'configuration?api_key=',apiKey)
+    fetch(url)
+    .then(result=>{return result.json()})
+    .then((data)=>{
+        baseImageURL = data.images.secure_base_url;
+        configData = data.images;
+        console.log('config:', data);
+        getMovies()
+    })
+    .catch(err=>console.log(err))
 }
 
 getConfig()
