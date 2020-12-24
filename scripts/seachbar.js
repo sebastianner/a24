@@ -1,29 +1,36 @@
 let urlBase = 'https://api.themoviedb.org/3/'
 let apiKey = '9660be5ceab38276fc0d0c4771d5c6be'
 let searchBar = document.getElementById('search-bar')
-let test = document.getElementById('test')
+let resultBox = document.getElementById('result-box')
 
-function showMovies(filtered,e) {
-    if (e.key==='Backspace') {
-        if (searchBar.value.length<1) {
-           test.style.display='none' 
-        }else{
-            test.style.display='block' 
-        }
+function releaseDate(e) {
+    let splited = e.release_date.split('-')
+    return splited[0]
+}
+
+function showMovies(filtered) {
+    if (filtered.length===0) {
+        resultBox.style.display='none' 
+    }else{
+        resultBox.style.display='block' 
     }
-    if (searchBar.value.length>0) {
-        test.style.display='block' 
+    if (searchBar.value.length<1) {
+        resultBox.style.display='none' 
     }
         var html = filtered
         .map((e)=>{
             return `
-            <span>
-                <h2>${e.title}</h2>
-            </span>
+            <div>
+                <figure><img src="${'https://image.tmdb.org/t/p/w92'+e.poster_path}"></img></figure>
+                <span>
+                    <h2>${e.title}</h2>
+                    <p>${releaseDate(e)}</p>                
+                </span>
+            </div>
         `
         })
         .join('')
-        test.innerHTML = html;
+        resultBox.innerHTML = html;
 }
 
 function toUpperCase(str) {
@@ -39,14 +46,18 @@ function runsearch(movies) {
     searchBar.addEventListener('keyup',(e)=>{
         let searchString = e.target.value
         let filteredMovies = movies.results.filter(m=>{
-            return m.title.includes(toUpperCase(searchString))
+            if (m.title.includes(toUpperCase(searchString))===true) {
+                return m.title.includes(toUpperCase(searchString))
+            }else{
+                return m.title.includes(searchString)
+            }
         })
-        showMovies(filteredMovies,e)
+        showMovies(filteredMovies)
     })
 }
 
 let getMovies = function () {
-    let url = ''.concat(urlBase,'discover/movie?api_key=',apiKey,'&page=1&with_companies=41077')
+    let url = ''.concat(urlBase,'discover/movie?api_key=',apiKey,'&page=2&with_companies=41077')
     fetch(url)
     .then(result=>result.json())
     .then((data)=>{
