@@ -277,7 +277,7 @@ main .description {
       .yellow-container .blog-list .blog .blog-post {
         height: 100%;
         width: 100%;
-        background-image: url("/static/euphoria.jpg");
+        background-image: url("../static/euphoria.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -295,6 +295,6 @@ main .description {
       .yellow-container .blog-list .blog:hover .blog-post-content {
         display: flex; }
       .yellow-container .blog-list .blog:nth-of-type(2) .blog-post {
-        background-image: url("/static/climax.jpg"); }
+        background-image: url("../static/climax.jpg"); }
       .yellow-container .blog-list .blog:nth-of-type(3) .blog-post {
-        background-image: url("/static/the-lighthouse.jpg"); }
+        background-image: url("../static/the-lighthouse.jpg"); }
