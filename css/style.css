@@ -181,11 +181,34 @@ main .description {
       .highlight .features .feature-container div, .highlight .upcoming .feature-container div, .highlight .upcoming .upcoming-container div {
         height: fit-content;
         width: fit-content;
-        padding-left: 1rem; }
+        margin-left: 1rem;
+        position: relative; }
+        .highlight .features .feature-container div .featured-span, .highlight .upcoming .feature-container div .featured-span, .highlight .upcoming .upcoming-container div .featured-span {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          display: none;
+          font-size: 3rem;
+          background-color: rgba(0, 0, 0, 0.421); }
+        .highlight .features .feature-container div:hover .featured-span, .highlight .upcoming .feature-container div:hover .featured-span, .highlight .upcoming .upcoming-container div:hover .featured-span {
+          display: flex; }
         .highlight .features .feature-container div:nth-of-type(1), .highlight .upcoming .feature-container div:nth-of-type(1), .highlight .upcoming .upcoming-container div:nth-of-type(1) {
-          padding: 0 0 0 5rem; }
+          margin: 0 0 0 4rem; }
         .highlight .features .feature-container div:nth-last-of-type(1), .highlight .upcoming .feature-container div:nth-last-of-type(1), .highlight .upcoming .upcoming-container div:nth-last-of-type(1) {
-          padding: 0 5rem 0 1rem; }
+          margin: 0 4rem 0 1rem; }
+  .highlight .upcoming .feature-container div:hover .upcoming-span, .highlight .upcoming .upcoming-container div:hover .upcoming-span {
+    display: flex; }
+  .highlight .upcoming .feature-container .upcoming-span, .highlight .upcoming .upcoming-container .upcoming-span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.421); }
 
 .blue-container {
   height: fit-content;
