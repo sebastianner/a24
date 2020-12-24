@@ -4,15 +4,18 @@
   margin: 0;
   padding: 0; }
 
+html {
+  font-size: 10px; }
+
 body {
   font-family: 'Mulish', sans-serif; }
 
 ::-webkit-scrollbar {
-  background-color: gray;
+  background-color: black;
   width: 8px; }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4d4d4d; }
+  background-color: gray; }
 
 header {
   position: absolute;
@@ -26,22 +29,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px; }
+    padding: 3rem; }
     header nav ul {
       list-style-type: none;
       display: flex;
       margin: 0;
       height: fit-content; }
       header nav ul li {
-        margin: 0 30px; }
+        margin: 0 3rem; }
         header nav ul li a {
           color: white;
           font-weight: 500;
+          font-size: 2rem;
           text-decoration: none; }
         header nav ul li div input {
           background-color: transparent;
           border: none;
-          border-bottom: 1px solid white;
+          border-bottom: .1rem solid white;
           outline: none;
           color: white;
           width: 0;
@@ -49,36 +53,37 @@ header {
         header nav ul li div label {
           cursor: pointer; }
         header nav ul li div:hover input {
-          width: 150px; }
+          width: 15rem; }
         header nav ul li:nth-of-type(4) {
           position: relative; }
       header nav ul .result-box {
         overflow-y: scroll;
         width: fit-content;
-        max-width: 500px;
-        height: 500px;
+        max-width: 50rem;
+        height: 50rem;
         position: absolute;
-        top: 90px;
-        right: 25px;
+        top: 9rem;
+        right: 2.5rem;
         text-align: right;
         color: white;
         background-color: black;
-        padding: 10px;
+        padding: 1rem;
         display: none; }
         header nav ul .result-box div {
           display: flex;
-          border: 1px solid white;
-          margin-bottom: 10px; }
+          border: 0.1rem solid white;
+          margin-bottom: 1rem; }
           header nav ul .result-box div figure {
             width: fit-content;
             height: 138px; }
           header nav ul .result-box div span {
-            padding: 10px; }
+            padding: 1rem; }
             header nav ul .result-box div span h2 {
-              text-align: left; }
+              text-align: left;
+              font-size: 2.3rem; }
             header nav ul .result-box div span p {
               text-align: left;
-              font-size: 16px; }
+              font-size: 1.6rem; }
           header nav ul .result-box div:nth-last-of-type(1) {
             margin: 0; }
 
@@ -87,8 +92,7 @@ header {
   position: fixed;
   background-color: black;
   box-shadow: 1px 5px 10px #07010199;
-  transition: .2s;
-  box-shadow: 0px 15px 28px -1px rgba(0, 0, 0, 0.75); }
+  transition: .2s; }
 
 .hero {
   position: relative;
@@ -119,23 +123,23 @@ main .description {
   justify-content: space-around;
   background-color: black;
   color: white;
-  padding: 4.5% 50px;
+  padding: 4.5% 5rem;
   flex-wrap: wrap; }
   main .description p {
     text-align: center;
-    width: 700px;
-    min-width: 250px;
+    width: 70rem;
+    min-width: 20.5rem;
     margin: 0;
     font: 'SemiBold' 'Roman' 30px/38px 'Mulish';
-    letter-spacing: 0px;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    font-size: 2rem; }
   main .description figure img {
     width: 100%;
     height: auto;
     max-width: 581px;
-    max-height: 400px;
-    min-height: 200px;
-    min-width: 300px; }
+    max-height: 40rem;
+    min-height: 20rem;
+    min-width: 30rem; }
 
 .red-container {
   height: fit-content;
@@ -153,12 +157,13 @@ main .description {
     color: white;
     text-align: center; }
     .highlight .features h1, .highlight .upcoming h1 {
-      padding: 50px; }
+      padding: 5rem;
+      font-size: 2.34rem; }
     .highlight .features .slide, .highlight .upcoming .slide {
       cursor: pointer;
       position: absolute;
       top: 50%;
-      font-size: 60px;
+      font-size: 6rem;
       font-weight: bold;
       z-index: 1;
       left: .5%; }
@@ -176,11 +181,11 @@ main .description {
       .highlight .features .feature-container div, .highlight .upcoming .feature-container div, .highlight .upcoming .upcoming-container div {
         height: fit-content;
         width: fit-content;
-        padding-left: 10px; }
+        padding-left: 1rem; }
         .highlight .features .feature-container div:nth-of-type(1), .highlight .upcoming .feature-container div:nth-of-type(1), .highlight .upcoming .upcoming-container div:nth-of-type(1) {
-          padding: 0 0 0 50px; }
+          padding: 0 0 0 5rem; }
         .highlight .features .feature-container div:nth-last-of-type(1), .highlight .upcoming .feature-container div:nth-last-of-type(1), .highlight .upcoming .upcoming-container div:nth-last-of-type(1) {
-          padding: 0 50px 0 10px; }
+          padding: 0 5rem 0 1rem; }
 
 .blue-container {
   height: fit-content;
@@ -188,7 +193,7 @@ main .description {
   position: relative; }
 
 .blue-container {
-  padding: 100px;
+  padding: 10rem;
   box-sizing: border-box; }
   .blue-container .shop-container .shop-item {
     font-family: 'Mulish';
@@ -198,25 +203,31 @@ main .description {
     align-items: center; }
     .blue-container .shop-container .shop-item .item-text-container {
       width: 30%;
-      max-width: 500px; }
+      max-width: 50rem; }
       .blue-container .shop-container .shop-item .item-text-container h1 {
         color: white;
         position: relative;
-        bottom: 30px;
-        font-weight: 400; }
+        bottom: 3rem;
+        font-weight: 400;
+        font-size: 2.34rem; }
+      .blue-container .shop-container .shop-item .item-text-container h2 {
+        font-size: 3rem; }
       .blue-container .shop-container .shop-item .item-text-container p {
-        width: 100%; }
+        width: 100%;
+        font-size: 2rem; }
+      .blue-container .shop-container .shop-item .item-text-container span {
+        color: 2.2rem; }
       .blue-container .shop-container .shop-item .item-text-container .text-icons-container {
         position: relative;
-        top: 10px; }
+        top: 1rem; }
         .blue-container .shop-container .shop-item .item-text-container .text-icons-container i {
           cursor: pointer; }
         .blue-container .shop-container .shop-item .item-text-container .text-icons-container span {
-          font-size: 22px;
+          font-size: 2.2rem;
           font-weight: 400;
           cursor: pointer; }
     .blue-container .shop-container .shop-item figure {
-      margin: 50px;
+      margin: 5rem;
       cursor: pointer; }
 
 .yellow-container {
@@ -224,21 +235,22 @@ main .description {
   background: transparent linear-gradient(181deg, #000000 10%, #D9CC2D 50%, #000000 100%) 0% 0% no-repeat padding-box; }
 
 .yellow-container {
-  padding: 0  100px 100px; }
+  padding: 0  10rem 10rem; }
   .yellow-container h1 {
     text-align: center;
     color: white;
-    margin-bottom: 20px;
-    font-weight: 400; }
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+    font-size: 2.8rem; }
   .yellow-container .blog-list {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .yellow-container .blog-list .blog {
       position: relative;
-      height: 450px;
+      height: 40.5rem;
       width: 50%;
-      margin: 10px; }
+      margin: 1rem; }
       .yellow-container .blog-list .blog .blog-post {
         height: 100%;
         width: 100%;
@@ -247,7 +259,7 @@ main .description {
         background-repeat: no-repeat;
         background-position: center;
         position: absolute; }
-      .yellow-container .blog-list .blog .test {
+      .yellow-container .blog-list .blog .blog-post-content {
         position: absolute;
         left: 0;
         right: 0;
@@ -255,8 +267,9 @@ main .description {
         top: 0;
         display: none;
         color: white;
-        background-color: rgba(0, 0, 0, 0.421); }
-      .yellow-container .blog-list .blog:hover .test {
+        background-color: rgba(0, 0, 0, 0.421);
+        font-size: 3rem; }
+      .yellow-container .blog-list .blog:hover .blog-post-content {
         display: flex; }
       .yellow-container .blog-list .blog:nth-of-type(2) .blog-post {
         background-image: url("/static/climax.jpg"); }
