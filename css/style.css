@@ -132,11 +132,30 @@ main .description {
       .highlight .features .feature-container div, .highlight .upcoming .feature-container div, .highlight .upcoming .upcoming-container div {
         height: fit-content;
         width: fit-content;
-        padding-left: 10px; }
+        margin-left: 10px;
+        position: relative; }
+        .highlight .features .feature-container div .featured-span, .highlight .upcoming .feature-container div .featured-span, .highlight .upcoming .upcoming-container div .featured-span {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          top: 0;
+          display: none; }
+        .highlight .features .feature-container div:hover .featured-span, .highlight .upcoming .feature-container div:hover .featured-span, .highlight .upcoming .upcoming-container div:hover .featured-span {
+          display: flex; }
         .highlight .features .feature-container div:nth-of-type(1), .highlight .upcoming .feature-container div:nth-of-type(1), .highlight .upcoming .upcoming-container div:nth-of-type(1) {
-          padding: 0 0 0 50px; }
+          margin: 0 0 0 40px; }
         .highlight .features .feature-container div:nth-last-of-type(1), .highlight .upcoming .feature-container div:nth-last-of-type(1), .highlight .upcoming .upcoming-container div:nth-last-of-type(1) {
-          padding: 0 50px 0 10px; }
+          margin: 0 40px 0 10px; }
+  .highlight .upcoming .feature-container div:hover .upcoming-span, .highlight .upcoming .upcoming-container div:hover .upcoming-span {
+    display: flex; }
+  .highlight .upcoming .feature-container .upcoming-span, .highlight .upcoming .upcoming-container .upcoming-span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: none; }
 
 .blue-container {
   height: fit-content;
@@ -203,7 +222,7 @@ main .description {
         background-repeat: no-repeat;
         background-position: center;
         position: absolute; }
-      .yellow-container .blog-list .blog .test {
+      .yellow-container .blog-list .blog .blog-post-content {
         position: absolute;
         left: 0;
         right: 0;
@@ -212,7 +231,7 @@ main .description {
         display: none;
         color: white;
         background-color: rgba(0, 0, 0, 0.421); }
-      .yellow-container .blog-list .blog:hover .test {
+      .yellow-container .blog-list .blog:hover .blog-post-content {
         display: flex; }
       .yellow-container .blog-list .blog:nth-of-type(2) .blog-post {
         background-image: url("/static/climax.jpg"); }

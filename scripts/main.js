@@ -33,10 +33,11 @@ let getUpcoming = ()=>{
     .then(data=>{
         html = data.results
         .map((e)=>{
+            counter++
             return `
             <div id="upcoming${+counter}">
                 <img class="upcoming-poster" src="${'https://image.tmdb.org/t/p/w342'+e.poster_path}"></img>
-                <span class="upcoming-span hover">hola</span>
+                <span class="upcoming-span">hola</span>
             </div>
         `
     })
