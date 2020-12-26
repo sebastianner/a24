@@ -155,7 +155,8 @@ main .description {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    text-align: center; }
+    text-align: center;
+    margin: 0 2rem; }
     .highlight .features h1, .highlight .upcoming h1 {
       padding: 5rem;
       font-size: 2.34rem; }
@@ -194,10 +195,6 @@ main .description {
           background-color: rgba(0, 0, 0, 0.421); }
         .highlight .features .feature-container div:hover .featured-span, .highlight .upcoming .feature-container div:hover .featured-span, .highlight .upcoming .upcoming-container div:hover .featured-span {
           display: flex; }
-        .highlight .features .feature-container div:nth-of-type(1), .highlight .upcoming .feature-container div:nth-of-type(1), .highlight .upcoming .upcoming-container div:nth-of-type(1) {
-          margin: 0 0 0 4rem; }
-        .highlight .features .feature-container div:nth-last-of-type(1), .highlight .upcoming .feature-container div:nth-last-of-type(1), .highlight .upcoming .upcoming-container div:nth-last-of-type(1) {
-          margin: 0 4rem 0 1rem; }
   .highlight .upcoming .feature-container div:hover .upcoming-span, .highlight .upcoming .upcoming-container div:hover .upcoming-span {
     display: flex; }
   .highlight .upcoming .feature-container .upcoming-span, .highlight .upcoming .upcoming-container .upcoming-span {
