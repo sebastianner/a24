@@ -6,7 +6,7 @@
 }
 
 html{
-    font-size: 10px;
+    font-size: 62.5%;
 }
 
 body{
@@ -19,3 +19,4 @@ body{
 @import "components/hero";
 @import "components/descrip";
 @import "components/red-container","components/blue-container","components/yellow-container";
+@import "components/footer";

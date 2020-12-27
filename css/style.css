@@ -5,7 +5,7 @@
   padding: 0; }
 
 html {
-  font-size: 10px; }
+  font-size: 62.5%; }
 
 body {
   font-family: 'Mulish', sans-serif; }
@@ -184,7 +184,7 @@ main .description {
         width: fit-content;
         margin-left: 1rem;
         position: relative; }
-        .highlight .features .feature-container div .featured-span, .highlight .upcoming .feature-container div .featured-span, .highlight .upcoming .upcoming-container div .featured-span {
+        .highlight .features .feature-container div .featured-span, .highlight .upcoming .feature-container div .featured-span, .highlight .upcoming .upcoming-container div .featured-span, .highlight .upcoming .feature-container div .upcoming-span, .highlight .features .feature-container div .upcoming .upcoming-container .upcoming-span, .highlight .upcoming .upcoming-container div .upcoming-span {
           position: absolute;
           left: 0;
           right: 0;
@@ -192,20 +192,17 @@ main .description {
           top: 0;
           display: none;
           font-size: 3rem;
-          background-color: rgba(0, 0, 0, 0.421); }
-        .highlight .features .feature-container div:hover .featured-span, .highlight .upcoming .feature-container div:hover .featured-span, .highlight .upcoming .upcoming-container div:hover .featured-span {
+          background-color: rgba(0, 0, 0, 0.765);
+          flex-direction: column;
+          justify-content: center; }
+          .highlight .features .feature-container div .featured-span h1, .highlight .upcoming .feature-container div .featured-span h1, .highlight .upcoming .upcoming-container div .featured-span h1, .highlight .upcoming .feature-container div .upcoming-span h1, .highlight .features .feature-container div .upcoming .upcoming-container .upcoming-span h1, .highlight .upcoming .upcoming-container div .upcoming-span h1 {
+            padding: 2rem; }
+          .highlight .features .feature-container div .featured-span p, .highlight .upcoming .feature-container div .featured-span p, .highlight .upcoming .upcoming-container div .featured-span p, .highlight .upcoming .feature-container div .upcoming-span p, .highlight .features .feature-container div .upcoming .upcoming-container .upcoming-span p, .highlight .upcoming .upcoming-container div .upcoming-span p {
+            font-size: 2rem; }
+        .highlight .features .feature-container div:hover .featured-span, .highlight .upcoming .feature-container div:hover .featured-span, .highlight .upcoming .upcoming-container div:hover .featured-span, .highlight .upcoming .feature-container div:hover .upcoming-span, .highlight .features .feature-container div:hover .upcoming .upcoming-container .upcoming-span, .highlight .upcoming .upcoming-container div:hover .upcoming-span {
           display: flex; }
   .highlight .upcoming .feature-container div:hover .upcoming-span, .highlight .upcoming .upcoming-container div:hover .upcoming-span {
     display: flex; }
-  .highlight .upcoming .feature-container .upcoming-span, .highlight .upcoming .upcoming-container .upcoming-span {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    display: none;
-    font-size: 3rem;
-    background-color: rgba(0, 0, 0, 0.421); }
 
 .blue-container {
   height: fit-content;
@@ -241,7 +238,8 @@ main .description {
         position: relative;
         top: 1rem; }
         .blue-container .shop-container .shop-item .item-text-container .text-icons-container i {
-          cursor: pointer; }
+          cursor: pointer;
+          font-size: 2rem; }
         .blue-container .shop-container .shop-item .item-text-container .text-icons-container span {
           font-size: 2.2rem;
           font-weight: 400;
@@ -295,3 +293,14 @@ main .description {
         background-image: url("../static/climax.jpg"); }
       .yellow-container .blog-list .blog:nth-of-type(3) .blog-post {
         background-image: url("../static/the-lighthouse.jpg"); }
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  height: 50rem; }
+  footer a {
+    color: white;
+    text-decoration: none; }

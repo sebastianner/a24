@@ -14,7 +14,10 @@ let getFeatures = function () {
             return `
             <div id="movie${+counter}">
                 <img class="featured-poster" id="poster${+counter}" src="${'https://image.tmdb.org/t/p/w342'+e.poster_path}"></img>
-                <span class="featured-span hover">hola</span>
+                <span class="featured-span hover">
+                    <h1>${e.title}</h1>
+                    <p>${e.overview}</p>
+                </span>
             </div>
         `
     })
@@ -37,7 +40,10 @@ let getUpcoming = ()=>{
             return `
             <div id="upcoming${+counter}">
                 <img class="upcoming-poster" src="${'https://image.tmdb.org/t/p/w342'+e.poster_path}"></img>
-                <span class="upcoming-span">hola</span>
+                <span class="upcoming-span">
+                    <h1>${e.title}</h1>
+                    <p>${e.overview}</p>
+                </span>
             </div>
         `
     })
