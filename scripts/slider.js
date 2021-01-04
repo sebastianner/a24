@@ -1,5 +1,4 @@
 var icon = document.getElementsByClassName('slide')
-console.log(icon)
 var featured = document.getElementById('feature-container')
 var upcoming = document.getElementById('upcoming-container')
 
