@@ -48,7 +48,7 @@ let getUpcoming = ()=>{
             let span = document.createElement('span')
             span.setAttribute('class','upcoming-span')
             span.innerText = e.title
-            document.getElementById('upcoming   '+counter).appendChild(span)
+            document.getElementById('upcoming'+counter).appendChild(span)
 
             poster.onerror=function() {movie.style.display = 'none'}
             counter++

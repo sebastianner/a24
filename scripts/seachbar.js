@@ -57,7 +57,7 @@ function runsearch(movies) {
 }
 
 let getMovies = function () {
-    let url = ''.concat(urlBase,'discover/movie?api_key=',apiKey,'&page=2&with_companies=41077')
+    let url = ''.concat(urlBase,'discover/movie?api_key=',apiKey,'&page=1&with_companies=41077')
     fetch(url)
     .then(result=>result.json())
     .then((data)=>{
