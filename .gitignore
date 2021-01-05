@@ -1,2 +1,5 @@
 static
+*.png
+*.gif
+*.jpg
 videos
