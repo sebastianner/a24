@@ -136,10 +136,10 @@ main .description {
   main .description figure img {
     width: 100%;
     height: auto;
-    max-width: 581px;
-    max-height: 40rem;
-    min-height: 20rem;
-    min-width: 30rem; }
+    max-width: 400px; }
+  @media screen and (max-width: 768px) {
+    main .description figure {
+      margin-bottom: 25px; } }
 
 .red-container {
   height: fit-content;

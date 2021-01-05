@@ -18,13 +18,16 @@ main{
             font-size: 2rem;
         }
 
-        figure img{
-            width: 100%;
-            height: auto;
-            max-width: 581px;
-            max-height: 40rem;
-            min-height: 20rem;
-            min-width: 30rem;
+        figure{
+            img{
+                width: 100%;
+                height: auto;
+                max-width: 400px;
+            }
+
+            @media screen and (max-width:768px){
+                margin-bottom: 25px;
+            }
         }
     }
 }
