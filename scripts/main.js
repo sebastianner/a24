@@ -30,7 +30,7 @@ let getFeatures = function () {
 
 
 let getUpcoming = ()=>{
-    let getUpcomingUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=9660be5ceab38276fc0d0c4771d5c6be&language=en-US&sort_by=popularity.asc&include_adult=true&include_video=true&primary_release_year=2020&year=2020&with_companies=41077'
+    let getUpcomingUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=9660be5ceab38276fc0d0c4771d5c6be&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2&with_companies=41077'
     let counter = 0
     fetch(getUpcomingUrl)
     .then(data=>data.json())
