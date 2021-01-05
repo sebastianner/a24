@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .featured-poster {
+    width: 185px; }
+  .upcoming-poster {
+    width: 185px; }
+  .blue-container {
+    padding: 5rem; }
+    .blue-container .item-text-container h2 {
+      font-size: 2.3rem !important; }
+    .blue-container .item-text-container p {
+      font-size: 1.7rem !important; }
+    .blue-container .item-text-container .text-icons-container span {
+      font-size: 1.8rem !important; }
+  .yellow-container {
+    padding: 0; } }
