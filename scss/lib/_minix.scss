@@ -3,3 +3,26 @@
         background: $color;
         @content
 }
+
+@mixin seach-button {
+                input{
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: .1rem solid white;
+                        outline: none;
+                        color: white;
+                        width: 0;
+                        transition: .6s;
+                }
+
+                label{
+                        cursor: pointer;
+                }
+
+                &:hover{
+                        input{
+                        width: 15rem;
+                        }
+                }
+        @content
+}

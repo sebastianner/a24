@@ -1,7 +1,18 @@
 let urlBase = 'https://api.themoviedb.org/3/'
 let apiKey = '9660be5ceab38276fc0d0c4771d5c6be'
-let searchBar = document.getElementById('search-bar')
-let resultBox = document.getElementById('result-box')
+let searchBar = document.getElementsByClassName('search-bar')
+let resultBox = document.getElementsByClassName('result-box')
+let element = 0
+let mediaPhone = window.matchMedia("(max-width: 425px)")
+
+mediaPhone.addEventListener("change",(e)=>{
+    if (e.matches) {
+        element = 1
+    } else {
+        element = 0
+    }
+    getConfig()
+})
 
 function releaseDate(e) {
     let splited = e.release_date.split('-')
@@ -10,12 +21,12 @@ function releaseDate(e) {
 
 function showMovies(filtered) {
     if (filtered.length===0) {
-        resultBox.style.display='none' 
+        resultBox[element].style.display='none' 
     }else{
-        resultBox.style.display='block' 
+        resultBox[element].style.display='block' 
     }
-    if (searchBar.value.length<1) {
-        resultBox.style.display='none' 
+    if (searchBar[element].value.length<1) {
+        resultBox[element].style.display='none' 
     }
         var html = filtered
         .map((e)=>{
@@ -30,7 +41,7 @@ function showMovies(filtered) {
         `
         })
         .join('')
-        resultBox.innerHTML = html;
+        resultBox[element].innerHTML = html;
 }
 
 function toUpperCase(str) {
@@ -42,8 +53,7 @@ function toUpperCase(str) {
 }
 
 function runsearch(movies) {
-    console.log(movies)
-    searchBar.addEventListener('keyup',(e)=>{
+    searchBar[element].addEventListener('keyup',(e)=>{
         let searchString = e.target.value
         let filteredMovies = movies.results.filter(m=>{
             if (m.title.includes(toUpperCase(searchString))===true) {
@@ -72,10 +82,18 @@ let getConfig = function () {
     .then((data)=>{
         baseImageURL = data.images.secure_base_url;
         configData = data.images;
-        console.log('config:', data);
         getMovies()
     })
     .catch(err=>console.log(err))
 }
 
-getConfig()
+let checkScreenSize = ()=>{
+    if (screen.width<=425) {
+        element = 1
+    } else {
+        element = 0
+    }
+    getConfig()
+}
+
+checkScreenSize()

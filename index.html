@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/tablet/tablet.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="./css/responsive/responsive.css">
     <link rel="stylesheet" href="./resources/icomoon/style.css">
     <title>A24</title>
 </head>
@@ -16,14 +16,27 @@
                     <li><a href="#films">FILMS</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#shop">SHOP</a></li>
-                    <li>
+                    <li class="search">
                         <div>
-                            <input type="text" name="search-bar" id="search-bar">
+                            <input type="text" name="search-bar" class="search-bar">
                             <label for="search-bar"><span class="icon-search" style="font-size: 30px;"></span></label>
                         </div>
                     </li>
-                    <li id="result-box" class="result-box"></li>
+                    <li class="result-box" class="result-box"></li>
+                    <li id="menu-button" class="menu-button"><span>Menu</span></li>
                 </ul>
+                <div class="menu-container">
+                    <div id="menu-text" class="menu-text-container">
+                        <a href="#films">FILMS</a>
+                        <a href="#">TV</a>
+                        <a href="#shop">SHOP</a>
+                        <div class="search-container">
+                            <input type="text" name="search-bar" class="search-bar">
+                            <label for="search-bar"><span class="icon-search" style="font-size: 30px;"></span></label>
+                        </div>
+                    </div>
+                    <div class="result-box result-box-second"></div>
+                </div>
             </nav>
     </header>
     <section class="hero">
@@ -134,5 +147,6 @@
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/volume.js"></script>
     <script src="./scripts/seachbar.js"></script>
+    <script src="/scripts/header.js"></script>
 </body>
 </html>

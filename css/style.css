@@ -54,8 +54,10 @@ header {
           cursor: pointer; }
         header nav ul li div:hover input {
           width: 15rem; }
-        header nav ul li:nth-of-type(4) {
-          position: relative; }
+      header nav ul .search {
+        position: relative; }
+      header nav ul .menu-button {
+        display: none; }
       header nav ul .result-box {
         overflow-y: scroll;
         width: fit-content;
@@ -86,6 +88,8 @@ header {
               font-size: 1.6rem; }
           header nav ul .result-box div:nth-last-of-type(1) {
             margin: 0; }
+    header nav .menu-container {
+      display: none; }
 
 .sticky-nav {
   z-index: 2;
@@ -272,7 +276,7 @@ main .description {
       .yellow-container .blog-list .blog .blog-post {
         height: 100%;
         width: 100%;
-        background-image: url("../static/euphoria.jpg");
+        background-image: url("./static/euphoria.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

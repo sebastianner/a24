@@ -30,32 +30,15 @@ header{
                 }
 
                 div{
-                    input{
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: .1rem solid white;
-                        outline: none;
-                        color: white;
-                        width: 0;
-                        transition: .6s;
-                    }
-
-                    label{
-                        cursor: pointer;
-                    }
-
-                    &:hover{
-                        input{
-                            width: 15rem;
-                        }
-                    }
-                }
-
-                &:nth-of-type(4){
-                    position: relative;
-                }
+                    @include seach-button;
+            }
+            .search{
+                position: relative;
             }
 
+            .menu-button{
+                display: none;
+            }
             .result-box{
                 overflow-y: scroll;
                 width: fit-content;
@@ -98,6 +81,9 @@ header{
                 }
             }
             
+        }
+        .menu-container{
+            display: none;
         }
     }
 }
