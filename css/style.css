@@ -54,49 +54,48 @@ header {
           cursor: pointer; }
         header nav ul li div:hover input {
           width: 15rem; }
-      header nav ul .search {
-        position: relative; }
-      header nav ul .menu-button {
+        header nav ul li .search {
+          position: relative; }
+        header nav ul li .menu-button {
+          display: none; }
+        header nav ul li .result-box {
+          overflow-y: scroll;
+          width: fit-content;
+          max-width: 50rem;
+          height: 50rem;
+          position: absolute;
+          top: 9rem;
+          right: 2.5rem;
+          text-align: right;
+          color: white;
+          background-color: black;
+          padding: 1rem;
+          display: none; }
+          header nav ul li .result-box div {
+            display: flex;
+            border: 0.1rem solid white;
+            margin-bottom: 1rem; }
+            header nav ul li .result-box div figure {
+              width: fit-content;
+              height: 138px; }
+            header nav ul li .result-box div span {
+              padding: 1rem; }
+              header nav ul li .result-box div span h2 {
+                text-align: left;
+                font-size: 2.3rem; }
+              header nav ul li .result-box div span p {
+                text-align: left;
+                font-size: 1.6rem; }
+            header nav ul li .result-box div:nth-last-of-type(1) {
+              margin: 0; }
+      header nav ul .menu-container {
         display: none; }
-      header nav ul .result-box {
-        overflow-y: scroll;
-        width: fit-content;
-        max-width: 50rem;
-        height: 50rem;
-        position: absolute;
-        top: 9rem;
-        right: 2.5rem;
-        text-align: right;
-        color: white;
-        background-color: black;
-        padding: 1rem;
-        display: none; }
-        header nav ul .result-box div {
-          display: flex;
-          border: 0.1rem solid white;
-          margin-bottom: 1rem; }
-          header nav ul .result-box div figure {
-            width: fit-content;
-            height: 138px; }
-          header nav ul .result-box div span {
-            padding: 1rem; }
-            header nav ul .result-box div span h2 {
-              text-align: left;
-              font-size: 2.3rem; }
-            header nav ul .result-box div span p {
-              text-align: left;
-              font-size: 1.6rem; }
-          header nav ul .result-box div:nth-last-of-type(1) {
-            margin: 0; }
-    header nav .menu-container {
-      display: none; }
-
-.sticky-nav {
-  z-index: 2;
-  position: fixed;
-  background-color: black;
-  box-shadow: 1px 5px 10px #07010199;
-  transition: .2s; }
+  header .sticky-nav {
+    z-index: 2;
+    position: fixed;
+    background-color: black;
+    box-shadow: 1px 5px 10px #07010199;
+    transition: .2s; }
 
 .hero {
   position: relative;
