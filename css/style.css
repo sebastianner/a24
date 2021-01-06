@@ -90,12 +90,13 @@ header {
               margin: 0; }
       header nav ul .menu-container {
         display: none; }
-  header .sticky-nav {
-    z-index: 2;
-    position: fixed;
-    background-color: black;
-    box-shadow: 1px 5px 10px #07010199;
-    transition: .2s; }
+
+.sticky-nav {
+  z-index: 2;
+  position: fixed;
+  background-color: black;
+  box-shadow: 1px 5px 10px #07010199;
+  transition: .2s; }
 
 .hero {
   position: relative;
