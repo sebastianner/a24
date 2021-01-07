@@ -5,13 +5,13 @@ header{
     width: 100%;
     background-color: transparent;
     z-index: 1;
-    transition: .2s;
 
     nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 3rem;
+        background-color: black;
     
         ul{
             list-style-type: none;
@@ -28,84 +28,70 @@ header{
                     font-size: 2rem;
                     text-decoration: none;
                 }
-
-                div{
-                    input{
-                        background-color: transparent;
-                        border: none;
-                        border-bottom: .1rem solid white;
-                        outline: none;
-                        color: white;
-                        width: 0;
-                        transition: .6s;
-                    }
-
-                    label{
-                        cursor: pointer;
-                    }
-
-                    &:hover{
-                        input{
-                            width: 15rem;
-                        }
-                    }
-                }
-
-                &:nth-of-type(4){
-                    position: relative;
-                }
             }
 
-            .result-box{
-                overflow-y: scroll;
-                width: fit-content;
-                max-width: 50rem;
-                height: 50rem;
-                position: absolute;
-                top: 9rem;
-                right: 2.5rem;
-                text-align: right;
-                color: rgb(255, 255, 255);
-                background-color: rgb(0, 0, 0);
-                padding: 1rem;
-                display: none;
+        .search{
+            position: relative;
 
-                div{
-                    display: flex;
-                    border: .1rem solid rgb(255, 255, 255);
-                    margin-bottom: 1rem;
+            div{
+                @include search-button;
+            }
+        }
 
-                    figure{
-                        width: fit-content;
-                        height: 138px;
+        .menu-button{
+            display: none;
+        }
+        .result-box{
+            overflow-y: scroll;
+            width: fit-content;
+            max-width: 50rem;
+            height: 50rem;
+            position: absolute;
+            top: 9rem;
+            right: 2.5rem;
+            text-align: right;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            padding: 1rem;
+            display: none;
+
+            div{
+                display: flex;
+                border: .1rem solid rgb(255, 255, 255);
+                margin-bottom: 1rem;
+
+                figure{
+                    width: fit-content;
+                    height: 138px;
+                }
+
+                span{
+                    padding: 1rem;
+                    h2{
+                        text-align: left;
+                        font-size: 2.3rem;
                     }
-
-                    span{
-                        padding: 1rem;
-                        h2{
-                            text-align: left;
-                            font-size: 2.3rem;
-                        }
-                        p{
-                            text-align: left;
-                            font-size: 1.6rem;
-                        }
-                    }
-
-                    &:nth-last-of-type(1){
-                        margin: 0;
+                    p{
+                        text-align: left;
+                        font-size: 1.6rem;
                     }
                 }
+
+                &:nth-last-of-type(1){
+                    margin: 0;
+                }
             }
-            
         }
     }
+    .menu-container{
+        display: none;
+    }
+ }
 }
 
 .sticky-nav{
     z-index: 2;
-    position: fixed;
-    background-color: rgb(0, 0, 0);
+    position: sticky;
+    background-color: red;
     box-shadow: 1px 5px 10px #07010199;
-    transition: .2s;
-}
+ }

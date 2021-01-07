@@ -7,8 +7,14 @@ footer{
     height: 50rem;
     
     a{
-
         color: white;
         text-decoration: none;
+    }
+
+    @include media('<=425px'){
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 50px 0;
     }
 }

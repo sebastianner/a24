@@ -1,4 +1,5 @@
 let baseUrl = 'https://api.themoviedb.org/3/';
+let posterPath = []
 
 let getFeatures = function () {
     let getFeaturesUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=9660be5ceab38276fc0d0c4771d5c6be&language=en-US&include_adult=yes&include_video=yes&with_companies=41077'
@@ -14,6 +15,7 @@ let getFeatures = function () {
             let poster = document.createElement('img')
             poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
             poster.setAttribute('alt',e.title)
+            poster.setAttribute('class','featured-poster')
             document.getElementById('movie'+counter).appendChild(poster)
 
             let span = document.createElement('span')
@@ -43,6 +45,7 @@ let getUpcoming = ()=>{
             let poster = document.createElement('img')
             poster.setAttribute('src','https://image.tmdb.org/t/p/w342'+e.poster_path)
             poster.setAttribute('alt',e.title)
+            poster.setAttribute('class','upcoming-poster')
             document.getElementById('upcoming'+counter).appendChild(poster)
 
             let span = document.createElement('span')
