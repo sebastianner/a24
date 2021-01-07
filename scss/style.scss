@@ -13,7 +13,7 @@ body{
     font-family: 'Mulish', sans-serif;
 }
 
-@import "lib/variables","lib/minix","lib/functions";
+@import "lib/variables","lib/minix","lib/functions","lib/breakepoints";
 @import "components/scroll-bar";
 @import "components/header";
 @import "components/hero";

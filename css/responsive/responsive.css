@@ -31,7 +31,9 @@
         display: none;
         flex-direction: column;
         padding: 20px 25px 20px 0;
-        position: relative; }
+        position: relative;
+        background-color: black;
+        box-shadow: 1px 5px 10px #07010199; }
         nav .menu-container .menu-text-container a {
           color: white;
           text-decoration: none;
