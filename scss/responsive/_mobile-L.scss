@@ -38,7 +38,6 @@
             width: 100%;
             position: fixed;
             right: 0;
-            background-color: black;
 
             .menu-text-container{
                 display: none;
@@ -52,7 +51,7 @@
                 }
 
                 .search-container{
-                    @include seach-button;
+                    @include search-button;
                 }
             }
             .result-box-second{
@@ -63,6 +62,26 @@
                 top: 147px;
                 background-color: black;
                 overflow-y: scroll;
+
+                div{
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    figure{
+                        margin: 0 0 5px 5px;
+                    }
+
+                    span{
+                        h2{
+                            color: white;
+                            font-size: 2rem;
+                        }
+                        p{
+                            color: white;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
             }
         }
     }

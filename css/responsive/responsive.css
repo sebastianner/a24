@@ -26,8 +26,7 @@
       text-align: right;
       width: 100%;
       position: fixed;
-      right: 0;
-      background-color: black; }
+      right: 0; }
       nav .menu-container .menu-text-container {
         display: none;
         flex-direction: column;
@@ -57,6 +56,17 @@
         top: 147px;
         background-color: black;
         overflow-y: scroll; }
+        nav .menu-container .result-box-second div {
+          display: flex;
+          flex-direction: row-reverse; }
+          nav .menu-container .result-box-second div figure {
+            margin: 0 0 5px 5px; }
+          nav .menu-container .result-box-second div span h2 {
+            color: white;
+            font-size: 2rem; }
+          nav .menu-container .result-box-second div span p {
+            color: white;
+            font-size: 1.8rem; }
   .featured-poster {
     width: 154px !important; }
   .upcoming-poster {
