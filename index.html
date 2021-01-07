@@ -6,16 +6,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive/responsive.css">
     <link rel="stylesheet" href="./resources/icomoon/style.css">
+    <link rel="shortcut icon" href="/static/logo-white.png" type="image/x-icon">
     <title>A24</title>
 </head>
 <body>
     <header id="header">
-            <nav>
+            <nav id="nav">
                 <figure><a href="https://sebastianner.com/"><img src="./static/logo-white.png" alt="LOGO" width="82" height="34"></a></figure>
                 <ul>
                     <li><a href="#films">FILMS</a></li>
-                    <li><a href="#">TV</a></li>
                     <li><a href="#shop">SHOP</a></li>
+                    <li><a href="#blog">BLOG</a></li>
                     <li class="search">
                         <div>
                             <input type="text" name="search-bar" id="search-bar" class="search-bar">
@@ -25,12 +26,12 @@
                     <li id="result-box" class="result-box"></li>
                     <li id="menu-button" class="menu-button"><span>Menu</span></li>
                 </ul>
-                <div class="menu-container" style="background-color: transparent;">
-                    <div id="menu-text" class="menu-text-container" style="display: none;">
+                <div id="menu-container" class="menu-container" style="display: none;">
+                    <div id="menu-text" class="menu-text-container">
                         <a href="#films">FILMS</a>
-                        <a href="#">TV</a>
                         <a href="#shop">SHOP</a>
-                        <div class="search-container">
+                        <a href="#blog">BLOG</a>
+                        <div class="search-container" id="search-bar-label" >
                             <input type="text" name="search-bar" id="search-bar-second" class="search-bar">
                             <label for="search-bar-second"><span class="icon-search" style="font-size: 30px;"></span></label>
                         </div>
@@ -71,9 +72,10 @@
         </div>
         <div id="shop" class="blue-container">
             <section class="shop-container">
+                <h1>SHOP</h1>
                 <article class="shop-item">
                     <div class="item-text-container">
-                        <h1>SHOP</h1>
+                        <!-- <h1>SHOP</h1> -->
                         <h2>Ex Machina Screenplay Book</h2>
                         <p>Starting with Ex Machina by Alex Garland, The Witch by Robert Eggers, and Moonlight by Barry Jenkins, the first collection from A24 BOOKS celebrates the singular vision and unbridled artistry of these noted writer-directors, showcasing how they saw</p>
                         <div class="text-icons-container">
@@ -83,7 +85,7 @@
                     </div>
                     <figure><img src="./static/exmchbook-removebg-preview.jpg" alt="Ex Machina Screenplay Book"></figure>
                 </article>
-                <article class="shop-item">
+                <article class="shop-item shop-item-2">
                     <figure><img src="./static/uncutgemsmerch.jpg" alt="Ex Machina Screenplay Book"></figure>
                     <div class="item-text-container">
                         <h2>Ex Machina Screenplay Book</h2>
@@ -108,20 +110,20 @@
                 </article>
             </section>
         </div>
-        <div class="yellow-container">
+        <div id="blog" class="yellow-container">
             <h1>BLOG</h1>
             <section class="blog-list">
                 <article class="blog">
                     <div class="blog-post"></div>
-                    <span class="blog-post-content">hola</span>
+                    <span class="blog-post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 </article>
                 <article class="blog">
                     <div class="blog-post"></div>
-                    <span class="blog-post-content">hola</span>
+                    <span class="blog-post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 </article>
                 <article class="blog">
                     <div class="blog-post"></div>
-                    <span class="blog-post-content">hola</span>
+                    <span class="blog-post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
                 </article>
             </section>
         </div>

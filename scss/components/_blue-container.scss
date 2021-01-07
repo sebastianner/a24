@@ -8,8 +8,13 @@
     padding: 10rem;
     box-sizing: border-box;
     .shop-container{
+        h1{
+            font-size: 3rem;
+            font-weight: lighter;
+            color: white;
+            text-align: center;
+        }
         .shop-item{
-            font-family: 'Mulish';
             color: white;
             display: flex;
             justify-content: center;

@@ -2,8 +2,19 @@ let urlBase = 'https://api.themoviedb.org/3/'
 let apiKey = '9660be5ceab38276fc0d0c4771d5c6be'
 let searchBar = document.getElementsByClassName('search-bar')
 let resultBox = document.getElementsByClassName('result-box')
+let searchBarIcon = document.getElementById('search-bar-label')
+let searchBarSecond = document.getElementById('search-bar-second')
 let element = 0
 let mediaPhone = window.matchMedia("(max-width: 425px)")
+
+searchBarIcon.addEventListener('click',()=>{
+    if (resultBox[1].style.display === 'block') {
+        resultBox[1].style.display = 'none'
+    }else{
+        resultBox[1].style.display = 'none'
+    }
+})
+
 
 mediaPhone.addEventListener("change",(e)=>{
     if (e.matches) {

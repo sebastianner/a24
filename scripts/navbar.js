@@ -10,6 +10,6 @@ window.addEventListener('scroll', ()=>{
     }
     else{
         nav.classList.remove('sticky-nav')
-        menuBg[0].style.backgroundColor = 'transparent'
+        menuBg[0].style.backgroundColor = 'black'
     }
 })

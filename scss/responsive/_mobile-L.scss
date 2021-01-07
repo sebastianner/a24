@@ -31,20 +31,20 @@
             }
         }
         .menu-container{
-            display: flex !important;
             flex-direction: column;
-            top: 70px;
-            text-align: right;
-            width: 100%;
             position: fixed;
+            text-align: right;
+            top: 70px;
+            width: 100%;
             right: 0;
+            background-color: black;
+            box-shadow: 1px 5px 10px #07010199;
 
             .menu-text-container{
-                display: none;
+                display: flex;
                 flex-direction: column;
                 padding: 20px 25px 20px 0;
                 position: relative;
-                background-color: black;
                 box-shadow: 1px 5px 10px #07010199;
                 a{
                     color: white;
@@ -120,10 +120,13 @@
                     }
                 } 
             }
-
-            &:nth-child(2){
-                flex-direction: column;
-            }
         }
+        .shop-item-2{
+            flex-direction: column;
+        }
+    }
+
+    .yellow-container{
+        padding: 30px 0 !important;
     }
 }

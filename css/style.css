@@ -23,13 +23,14 @@ header {
   left: 0;
   width: 100%;
   background-color: transparent;
-  z-index: 1; }
+  z-index: 1;
+  transition: .1s; }
   header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
-    background-color: black; }
+    background-color: transparent; }
     header nav ul {
       list-style-type: none;
       display: flex;
@@ -93,9 +94,10 @@ header {
 
 .sticky-nav {
   z-index: 2;
-  position: sticky;
-  background-color: red;
-  box-shadow: 1px 5px 10px #07010199; }
+  position: fixed;
+  background-color: black !important;
+  box-shadow: 1px 5px 10px #07010199;
+  transition: .1s; }
 
 .hero {
   position: relative;
@@ -156,13 +158,13 @@ main .description {
   width: 100%; }
   .highlight .features, .highlight .upcoming {
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-align: center;
     margin: 0 2rem; }
     .highlight .features h1, .highlight .upcoming h1 {
       padding: 5rem;
-      font-size: 2.34rem; }
+      font-weight: lighter;
+      font-size: 3rem; }
     .highlight .features .slide, .highlight .upcoming .slide {
       cursor: pointer;
       position: absolute;
@@ -215,8 +217,12 @@ main .description {
 .blue-container {
   padding: 10rem;
   box-sizing: border-box; }
+  .blue-container .shop-container h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center; }
   .blue-container .shop-container .shop-item {
-    font-family: 'Mulish';
     color: white;
     display: flex;
     justify-content: center;
@@ -261,8 +267,8 @@ main .description {
     text-align: center;
     color: white;
     margin-bottom: 2.5rem;
-    font-weight: 400;
-    font-size: 2.8rem; }
+    font-size: 3rem;
+    font-weight: lighter; }
   .yellow-container .blog-list {
     display: flex;
     flex-direction: column;
@@ -275,7 +281,7 @@ main .description {
       .yellow-container .blog-list .blog .blog-post {
         height: 100%;
         width: 100%;
-        background-image: url("./static/euphoria.jpg");
+        background-image: url("../static/euphoria.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -288,8 +294,11 @@ main .description {
         top: 0;
         display: none;
         color: white;
-        background-color: rgba(0, 0, 0, 0.421);
-        font-size: 3rem; }
+        background-color: rgba(0, 0, 0, 0.834);
+        font-size: 3rem;
+        text-align: center;
+        font-size: 3rem;
+        align-items: center; }
       .yellow-container .blog-list .blog:hover .blog-post-content {
         display: flex; }
       .yellow-container .blog-list .blog:nth-of-type(2) .blog-post {
@@ -306,7 +315,9 @@ footer {
   height: 50rem; }
   footer a {
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    font-weight: lighter;
+    text-decoration: underline; }
   @media (max-width: 425px) {
     footer {
       display: flex;

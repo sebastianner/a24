@@ -20,19 +20,19 @@
         padding: 5px;
         list-style-type: none; }
     nav .menu-container {
-      display: flex !important;
       flex-direction: column;
-      top: 70px;
-      text-align: right;
-      width: 100%;
       position: fixed;
-      right: 0; }
+      text-align: right;
+      top: 70px;
+      width: 100%;
+      right: 0;
+      background-color: black;
+      box-shadow: 1px 5px 10px #07010199; }
       nav .menu-container .menu-text-container {
-        display: none;
+        display: flex;
         flex-direction: column;
         padding: 20px 25px 20px 0;
         position: relative;
-        background-color: black;
         box-shadow: 1px 5px 10px #07010199; }
         nav .menu-container .menu-text-container a {
           color: white;
@@ -88,8 +88,10 @@
         font-size: 2rem !important;
         display: inline-block;
         text-align: center; }
-    .blue-container .shop-item:nth-child(2) {
-      flex-direction: column; } }
+  .blue-container .shop-item-2 {
+    flex-direction: column; }
+  .yellow-container {
+    padding: 30px 0 !important; } }
 
 @media (max-width: 768px) {
   .featured-poster {

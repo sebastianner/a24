@@ -9,6 +9,8 @@ footer{
     a{
         color: white;
         text-decoration: none;
+        font-weight: lighter;
+        text-decoration: underline;
     }
 
     @include media('<=425px'){

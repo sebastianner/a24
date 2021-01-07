@@ -1,12 +1,14 @@
 let menu = document.getElementById('menu-button')
 let menuText = document.getElementById('menu-text')
-let e = document.getElementsByClassName('result-box')
+let menuContainer = document.getElementById('menu-container')
 
 menu.addEventListener('click',()=>{
-    if (menuText.style.display === 'none') {
-        menuText.style.display = 'flex'
+    if (menuContainer.style.display === 'none') {
+        menuContainer.style.display = 'flex'
+        nav.style.backgroundColor = 'black'
     }else{
-        e[1].style.display = 'none'
-        menuText.style.display = 'none'
+        resultBox[1].style.display = 'none'
+        menuContainer.style.display = 'none'
+        nav.style.backgroundColor = 'transparent'
     }
 })
